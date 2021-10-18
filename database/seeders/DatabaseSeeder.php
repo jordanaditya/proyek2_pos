@@ -14,8 +14,8 @@ class DatabaseSeeder extends Seeder
     {
         User::create([
             'name' => 'Kedai Zombie',
-            'email' => bcrypt('admin@admin.com'),
-            'password' => 'password', // password
+            'email' => 'admin@admin.com',
+            'password' => bcrypt('password'), 
             'remember_token' => Str::random(10)
         ]);
     }
