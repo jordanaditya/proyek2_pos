@@ -47,7 +47,7 @@
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Riwayat Transaksi</a>
+                      <a class="nav-link" href="\riwayat\riwayat">Riwayat Transaksi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Laporan</a>

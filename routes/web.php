@@ -23,3 +23,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::get('/menu/menu', [App\Http\Controllers\MenuController::class, 'index'])->name('menu');
+
+
+Route::get('/riwayat/riwayat', [App\Http\Controllers\RiwayatController::class, 'index'])->name('riwayat');
