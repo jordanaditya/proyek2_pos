@@ -26,3 +26,6 @@ Route::get('/menu/menu', [App\Http\Controllers\MenuController::class, 'index'])-
 
 
 Route::get('/riwayat/riwayat', [App\Http\Controllers\RiwayatController::class, 'index'])->name('riwayat');
+
+
+Route::get('/laporan/laporan', [App\Http\Controllers\LaporanController::class, 'index'])->name('laporan');

@@ -50,7 +50,7 @@
                       <a class="nav-link" href="\riwayat\riwayat">Riwayat Transaksi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Laporan</a>
+                        <a class="nav-link" href="\laporan\laporan">Laporan</a>
                     </li>
                 </ul>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
