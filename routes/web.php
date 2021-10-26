@@ -21,11 +21,12 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/menu', [App\Http\Controllers\MenuController::class, 'index'])->name('menu');
 
-Route::get('/menu/menu', [App\Http\Controllers\MenuController::class, 'index'])->name('menu');
+Route::get('/riwayat', [App\Http\Controllers\RiwayatController::class, 'index'])->name('riwayat');
 
+Route::get('/laporan', [App\Http\Controllers\LaporanController::class, 'index'])->name('laporan');
 
-Route::get('/riwayat/riwayat', [App\Http\Controllers\RiwayatController::class, 'index'])->name('riwayat');
+Route::get('/transaksi', [App\Http\Controllers\TransactionController::class, 'index'])->name('transaksi');
 
-
-Route::get('/laporan/laporan', [App\Http\Controllers\LaporanController::class, 'index'])->name('laporan');
+Route::get('/pos', [App\Http\Controllers\POSController::class, 'index'])->name('pos');

@@ -33,11 +33,11 @@
 
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                    <a class="nav-link font-weight-bolder" href="#">Point Of Sales Kedai Sambal Zombie                          
+                    <a class="nav-link font-weight-bolder" href="\pos">Point Of Sales Kedai Sambal Zombie                          
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="\menu\menu">Menu</a>
+                        <a class="nav-link" href="\menu">Menu</a>
                             <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Menu</a> -->
                         <!-- <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
@@ -47,10 +47,10 @@
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link" href="\riwayat\riwayat">Riwayat Transaksi</a>
+                      <a class="nav-link" href="\riwayat">Riwayat Transaksi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="\laporan\laporan">Laporan</a>
+                        <a class="nav-link" href="\laporan">Laporan</a>
                     </li>
                 </ul>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"

@@ -7,7 +7,7 @@
             <div class="card" style="min-height: 85vh">
                 <div class="card-header bg-white">
                     <div class="row">
-                        <div class="col"><h4 class="font-weight-bold">Laporan Transaksi</h4></div>
+                        <div class="col"><h4 class="font-weight-bold">Report / Laporan Transaksi</h4></div>
                     <div class="col"><a class="btn btn-primary float-right btn-sm" onclick="window.print()"><i class="fas fa-print"></i> Print</a>
                         <a href="{{ URL::previous() }}" class="btn btn-success float-right btn-sm"><i class="fas fa-arrow-left"></i> Back</a>
                     </div>
