@@ -4,14 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript">
-    document.write(unescape('%3c%6c%69%6e%6b%20%72%65%6c%20%3d%20%22%69%63%6f%6e%22%20%68%72%65%66%20%3d%22%69%6d%67%2f%6c%6f%67%6f%2e%70%6e%67%22%20%74%79%70%65%20%3d%20%22%69%6d%61%67%65%2f%70%6e%67%22%3e'));
-    </script>
 
-    <!-- CSRF Token  © 2020 Copyright: Tahu Coding  -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>POS Kedai Sambal  Zombie</title>
+    <title>POS Kedai Sambal Zombie</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/dashboard.css" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -27,56 +31,38 @@
 </head>
 
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark primary-color">
-            <div class="container-fluid">
-
+    <nav aria-label class="navbar navbar-expand-md navbar-dark success-color">
+        <div class="container-fluid">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bolder" href="{{ url('transcation') }}">Point Of Sales Laravel
+                    </a>
+                </li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="{{ __('Toggle navigation') }}">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                    <a class="nav-link font-weight-bolder" href="#">Point Of Sales Kedai Sambal Zombie                          
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="\menu\menu">Menu</a>
-                            <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Menu</a> -->
-                        <!-- <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Makanan</a>
-                            <a class="dropdown-item" href="#">Minuman</a>
-                        </div> -->
-                    </li>
 
-                    <li class="nav-item">
-                      <a class="nav-link" href="\riwayat\riwayat">Riwayat Transaksi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="\laporan\laporan">Laporan</a>
-                    </li>
                 </ul>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
 
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
+                <!-- Right Side Of Navbar -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Authentication Links -->
+                    @guest
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
                         @if (Route::has('register'))
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            </li>
                         @endif
-                        @else
+                    @else
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -86,7 +72,7 @@
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                                                     document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
 
@@ -96,64 +82,45 @@
                                 </form>
                             </div>
                         </li>
-                        @endguest
-                    </ul>
-                </div>
+                    @endguest
+                </ul>
             </div>
+        </div>
+    </nav>
+    <div class="row">
+        <nav aria-label id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse ">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/transcation">
+                        <span data-feather="home"></span>
+                        Transaction
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('products.index') }}">
+                        <span data-feather="file"></span>
+                        Menu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/transcation/history') }}">
+                        <span data-feather="shopping-cart"></span>
+                        Riwayat Transaksi
+                    </a>
+                </li>
+            </ul>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+
+            <main class="py-4">
+                @yield('content')
+            </main>
         </main>
-
-        
     </div>
-
-    
 </body>
-    <!-- Footer -->
-        <footer class="page-footer font-small blue pt-4">
-
-          <!-- Footer Elements -->
-          <div class="container">
-
-            <!-- Social buttons -->
-            <ul class="list-unstyled list-inline text-center">
-              <li class="list-inline-item">
-                <a class="btn-floating btn-fb mx-1">
-                  <i class="fab fa-facebook-f"> </i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-tw mx-1">
-                  <i class="fab fa-twitter"> </i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-gplus mx-1">
-                  <i class="fab fa-google-plus-g"> </i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-li mx-1">
-                  <i class="fab fa-linkedin-in"> </i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-dribbble mx-1">
-                  <i class="fab fa-dribbble"> </i>
-                </a>
-              </li>
-            </ul>
-            <!-- Social buttons -->
-
-          </div>
-          <!-- Footer Elements -->
-
-
-      
-        </footer>
-        <!-- Footer -->
+<!-- Footer -->
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
@@ -161,9 +128,9 @@
 <!-- Bootstrap core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js">
 </script>
-<!-- MDB core JavaScript //© 2020 Copyright: Tahu Coding -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
-
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/dashboard.js"></script>
 
 @stack('script')
 
