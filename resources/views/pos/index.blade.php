@@ -1,5 +1,4 @@
 @extends('layouts.app')
-<!-- © 2020 Copyright: Tahu Coding -->
 @section('content')
 <div class="container-fluid">
     <div class="row justify-content-center">
@@ -15,7 +14,6 @@
                                 <select name="" id="" class="form-control from-control-sm" style="font-size: 12px">
                                     <option value="" holder>Filter Category</option>
                                     <option value="1">All Category...</option>
-                                    <!-- Kembangkan sendiri ya bagian ini kalau bisa pake select2 biar keren -->
                                 </select>
                             </div>
                             <div class="col"><input type="text" name="search"
@@ -70,7 +68,6 @@
                             <select name="" id="" class="form-control from-control-sm" style="font-size: 13px">
                                 <option value="1">Take Away Customer</option>
                                 <option value="" holder>Other Customer...</option>
-                                <!-- Kembangkan sendiri ya bagian ini -->
                             </select>
                         </div>
                     </div>
@@ -155,7 +152,6 @@
                         <div class="col-sm-4">
                             <a class="btn btn-primary btn-lg btn-block"
                                 style="padding:1rem!important" href="" target="_blank">History</a>
-                            <!-- Kembangkan sendiri ya bagian ini, logikanya kita simpan cartnya sementara dalam databse ntar kalau butuh keluarin lagi-->
                         </div>
                         <div class="col-sm-4">
                             <button class="btn btn-success btn-lg btn-block" style="padding:1rem!important"
@@ -170,10 +166,10 @@
     <div class="modal fade right" id="fullHeightModalRight" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
 
-        <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+     
         <div class="modal-dialog modal-full-height modal-right" role="document">
 
-        <!-- Sorry campur2 bahasa indonesia sama inggris krn kebiasaan make b.inggris eh ternyata buat aplikasi buat indonesia jadi gini deh  -->
+      
             <div class="modal-content">
                 <div class="modal-header indigo">
                     <h6 class="modal-title w-100 text-light" id="myModalLabel">Billing Information</h6>
@@ -218,8 +214,7 @@
         </div>
     </div>
     @endsection
-    <!-- © 2020 Copyright: Tahu Coding -->
-    <!-- Ini error harusnya bisa dinamis ambil value dari controller tp agar cepet ya biar aja gini silahkan modifikasi  -->
+   
     @push('script')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     @if(Session::has('error'))
@@ -326,12 +321,12 @@
 
         ::-webkit-scrollbar {
             width: 0px;
-            /* Remove scrollbar space */
+
             background: transparent;
-            /* Optional: just make scrollbar invisible */
+
         }
 
-        /* Optional: show position indicator in red */
+
         ::-webkit-scrollbar-thumb {
             background: #FF0000;
         }
@@ -358,5 +353,4 @@
         }
 
     </style>
-    <!-- © 2020 Copyright: Tahu Coding -->
     @endpush
