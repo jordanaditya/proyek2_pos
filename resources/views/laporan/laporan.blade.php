@@ -7,75 +7,68 @@
             <div class="card" style="min-height: 85vh">
                 <div class="card-header bg-white">
                     <div class="row">
-                        <div class="col"><h4 class="font-weight-bold">Laporan Transaksi</h4></div>
-                    <div class="col"><a class="btn btn-primary float-right btn-sm" onclick="window.print()"><i class="fas fa-print"></i> Print</a>
-                        <a href="{{ URL::previous() }}" class="btn btn-success float-right btn-sm"><i class="fas fa-arrow-left"></i> Back</a>
-                    </div>
-                    </div>                 
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-6">
-                              <table width="100%" class="table table-borderless">
-                                <tr>
-                                    <td width="38%" class="font-weight-bold">Invoices Number</td>
-                                    <td width="2%" class="font-weight-bold">:</td>
-                                    <td width="60%" class="font-weight-bold"></td>
-                                </tr>
-                                <tr>
-                                    <td width="38%">Admin</td>
-                                    <td width="2%">:</td>
-                                    <td width="60%"></td>
-                                </tr>
-                                <tr>
-                                    <td width="38%">Create At</td>
-                                    <td width="2%">:</td>
-                                    <td width="60%"></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-sm-6">
-                            <table width="100%" class="table table-borderless">
-                                <tr>
-                                    <td width="38%">Pay</td>
-                                    <td width="2%">:</td>
-                                    <td width="60%"></td>
-                                </tr>
-                                <tr>
-                                    <td width="38%">Total</td>
-                                    <td width="2%">:</td>
-                                    <td width="60%"></td>
-                                </tr>   
-                                <tr>
-                                    <td width="38%">Customer</td>
-                                    <td width="2%">:</td>
-                                    <td width="60%">Take Away Customer</td>
-                                </tr>                   
-                            </table>
+                        <div class="col">
+                            <h4 class="font-weight-bold">Laporan Transaksi</h4>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <table class="table table-striped table-sm" width="100%">
-                                <thead>
-                                    <tr>
-                                    <th>No</th>
-                                    <th>Product</th>
-                                    <th>Quantity</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                </tbody>                               
-                            </table>
-                        </div>
-                    </div>                  
                 </div>
+                <div class="row">
+
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Jumlah Stok Menu</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">300</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-8 mb-6">
+                        <div class="card border-left-dark shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">Jumlah Transaksi</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">Rp. 300.000</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Jumlah Pemasukan</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">Rp. 100.000.000, 00</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
             </div>
+
+
+        </div>
     </div>
 </div>
 </div>
