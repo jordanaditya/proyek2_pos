@@ -47,7 +47,30 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
+<<<<<<< HEAD
 
+=======
+                    <li class="nav-item">
+                    <a class="nav-link font-weight-bolder" href="\pos">Point Of Sales Kedai Sambal Zombie                          
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="\menu">Menu</a>
+                            <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Menu</a> -->
+                        <!-- <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Makanan</a>
+                            <a class="dropdown-item" href="#">Minuman</a>
+                        </div> -->
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="\riwayat">Riwayat Transaksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="\laporan">Laporan</a>
+                    </li>
+>>>>>>> 82da3144f16cbd2dfdb624bffcb5f7e025d7d664
                 </ul>
 
                 <!-- Right Side Of Navbar -->
