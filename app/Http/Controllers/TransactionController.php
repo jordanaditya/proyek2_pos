@@ -37,7 +37,7 @@ class TransactionController extends Controller
         }
 
         $condition = new \Darryldecode\Cart\CartCondition(array(
-                'name' => 'pajak',
+                
                 'type' => 'tax', //tipenya apa
                 'target' => 'total', //target kondisi ini apply ke mana (total, subtotal)
                 'value' => $tax, //contoh -12% or -10 or +10 etc
@@ -56,7 +56,6 @@ class TransactionController extends Controller
                 $cart[] = [
                     'rowId' => $row->id,
                     'name' => $row->name,
-                    'qty' => $row->quantity,
                     'pricesingle' => $row->price,
                     'price' => $row->getPriceSum(),
                     'created_at' => $row->attributes['created_at'],
